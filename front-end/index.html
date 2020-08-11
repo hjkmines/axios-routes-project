@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <h1>Add a user</h1>
+    <form id="new-user" onsubmit="setTimeout(() => window.location.reload(), 10)">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="name">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" placeholder="username">
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email" placeholder="email">
+        <input type="submit" id="submit">
+    </form>
+
+    <br>
+
+    <h1>Update a user</h1>
+    <form id="update-user" onsubmit="setTimeout(() => window.location.reload(), 10)">
+        <select name="user-id" id="name-select"></select>
+        <label for="name">Name: </label>
+        <input type="text" id="name-update" name="name" placeholder="name">
+        <label for="username">Username: </label>
+        <input type="text" id="username-update" name="username" placeholder="username">
+        <label for="email">Email: </label>
+        <input type="text" id="email-update" name="email" placeholder="email">
+        <input type="submit" id="submit">
+    </form>
+
+    <br>
+    <h1>List of Users</h1>
+    <ul id="list">
+    </ul>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./httpClass.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
